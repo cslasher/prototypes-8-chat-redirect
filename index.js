@@ -13,6 +13,7 @@ app.post('/member_login', (req, res) => {
     client_id: req.body.client_id
   };
   console.log(`#####client_id: ${response.client_id}`);
+  console.log(req.body);
 
   res.json(response);
 });
