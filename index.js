@@ -8,8 +8,10 @@ app.use(express.json());
 
 app.post('/member_login', (req, res) => {
   let response = {
-    user: 'user',
-    password: 'password',
+    userdata: {
+      userName: 'useraccount',
+      userId: 'userid'
+    },
     client_id: req.body.client_id
   };
   console.log(`#####client_id: ${response.client_id}`);
