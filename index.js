@@ -12,6 +12,7 @@ app.post('/member_login', (req, res) => {
     password: 'password',
     client_id: req.body.client_id
   };
+  console.log(response.client_id);
 
   res.json(response);
 });
